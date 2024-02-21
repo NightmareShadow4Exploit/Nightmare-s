@@ -17,3 +17,52 @@ function typeWriter() {
 window.onload = function() {
   typeWriter();
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let slides = document.querySelectorAll('.slides img');
+  
+  // Hide all slides
+  slides.forEach(slide => {
+    slide.style.display = 'none';
+  });
+
+  // Increment slideIndex and show the next slide
+  slideIndex++;
+  if (slideIndex >= slides.length) { 
+    slideIndex = 0; // Reset slideIndex if it reaches the end
+  } 
+  slides[slideIndex].style.display = 'block';  
+
+  // Call the function recursively after a delay
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+
