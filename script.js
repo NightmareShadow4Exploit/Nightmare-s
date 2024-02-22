@@ -9,7 +9,7 @@ function typeWriter() {
     setTimeout(typeWriter, speed);
   } else {
     setTimeout(function() {
-      window.location.href = 'hello.html';
+      window.location.href = 'home.html';
     }, 1000); // Redirect after all letters are typed (adjust delay as needed)
   }
 }
