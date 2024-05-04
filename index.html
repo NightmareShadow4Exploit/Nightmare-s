@@ -1,43 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Imam Husain A.S</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Language Selection</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            /* background-image: url('images/imam\ hussain\ against\ the\ army\ of\ yazid.jpg');  */
+            background-image: url('images/remember\ the\ cause.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            height: 100vh; /* Ensure full viewport height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #language-options {
+            text-align: center;
+        }
+
+        #language-options a {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            /* background-color: #3498db; */
+            /* color: white; */
+            /* color:gray; */
+            color:yellow;   
+            text-decoration: none;
+            font-weight: bolder;
+        }
+
+    </style>
 </head>
+
 <body>
-    <div class="container" style="  text-align: center">
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <a href="hindi.html">हिंदी</a>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <a href="marathi.html">मराठी</a>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+    <div id="language-options">
         <a href="english.html">English</a>
-        <br>
-         </div>
+        <a href="hindi.html">हिंदी</a>
+       <a href="marathi.html">मराठी</a>
+    </div>
+
+    <script>
+        function selectLanguage(language) {
+            // You can add your logic here to handle language selection
+            alert('Selected language: ' + language);
+        }
+    </script>
 </body>
+
 </html>
-
-
-
-
-
-
-
-<!-- https://www.youtube.com/clip/UgkxCvWvcLAKISL8hm9seHl2yHyOe74p0URQ -->
